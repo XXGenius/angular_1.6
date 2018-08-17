@@ -1,0 +1,26 @@
+<div ng-app="myApp.catalog">
+
+<div ng-controller="catalogCtrl">
+
+
+
+<div class="col-md-12 products">
+ <div class="row">
+ <div class="col-sm-6" ng-repeat="phone in phones track by $index">
+ <div class="product">
+ <div class="product-img">
+ <a ><img src="{{phone.img}}" alt=""></a>
+ </div>
+ <p class="product-title">
+ <p href="#">{{phone.name}}</p>
+ </p>
+ <p class="product-desc">{{phone.snippet}}</p>
+ <p class="product-price">{{phone.price}}</p>
+ <button class="btn" ng-click="addBucket(phone.id)">Добавить в корзину</button>
+ </div>
+ </div>
+ </div>
+</div>
+
+</div>
+</div>
