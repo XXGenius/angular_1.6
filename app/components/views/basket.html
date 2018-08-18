@@ -1,5 +1,5 @@
-<div ng-app="myApp.bucket">
- <div ng-controller="bucketCtrl">
+<div ng-app="myApp.basket">
+ <div ng-controller="basketCtrl">
     <div class="col-md-12 products">
          <div class="row">
              <div class="col-sm-6" ng-repeat="product in products track by $index">
@@ -10,11 +10,10 @@
                          <p class="product-title">
                          <p href="#">{{product.name}}</p>
                          <p class="product-price">{{product.price}}</p>
-                         <button class="btn" ng-click="delete(product.id)">Удалить из корзины</button>
+                         <button ng-click="removeProduct(product)">Удалить из корзины</button>
                  </div>
              </div>
          </div>
     </div>
-    <div ng-show="errorbucket" class="alert alert-warning" role="alert">Корзина пуста.</div>
  </div>
 </div>

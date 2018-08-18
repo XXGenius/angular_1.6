@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('bucket', function() {
+  describe('basket', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/bucket');
+      browser.get('index.html#!/basket');
     });
 
 
-    it('should render bucket when user navigates to /bucket', function() {
+    it('should render basket when user navigates to /basket', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });
